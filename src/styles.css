@@ -1,0 +1,163 @@
+/* styles.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Miss+Fajardose&family=Tangerine:wght@400;700&family=Waterfall&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Matemasie&family=Miss+Fajardose&family=Tangerine:wght@400;700&family=Waterfall&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./360_FF.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+p {
+  font-family: monospace;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.homePage {
+  box-shadow: 0px 1px 30px 14px rgba(94, 8, 78, 0.2);
+
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  padding-top: 8px;
+  color: aliceblue;
+
+  height: 550px;
+  width: 680px;
+  background-color: rgba(20, 16, 16, 0.6);
+  transform: 0.5s;
+}
+.homePage:hover {
+  box-shadow: 0px 1px 30px 1px rgba(203, 30, 108, 0.5);
+}
+.cheImg {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
+
+/*---- --- --- ---  Menu  ---- -------- ----- */
+.menuPage {
+  box-shadow: 0px 1px 30px 14px rgba(94, 8, 78, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: auto;
+  height: 750px;
+  width: 650px;
+  color: aliceblue;
+  background-color: rgba(20, 16, 16, 0.4);
+  transform: 0.5s;
+}
+.menuPage:hover {
+  box-shadow: 0px 1px 30px 1px rgba(47, 191, 114, 0.5);
+}
+
+.card {
+  margin-top: 0px;
+  align-content: center;
+  justify-content: center;
+  flex: 0 0 calc(50% - 20px); /* Each card takes up 50% of the row minus the gap */
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 220px;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 5px 1px 0px 0px rgba(13, 15, 14, 0.8);
+}
+.card:hover {
+  box-shadow: 0px 1px 30px 1px rgba(114, 36, 48, 0.8);
+  transform: translateX(3%);
+}
+.emoji {
+  font-size: 85px;
+  margin: 8px 0px 40px;
+}
+
+.paraMenu {
+  margin-bottom: 100px;
+}
+
+/*----    ---- ---- --- ---- -------- ----- */
+
+.contactPage {
+  color: rgb(17, 20, 22);
+  margin: auto;
+  height: 300px;
+  width: 480px;
+  background-color: rgba(30, 34, 31, 0.7);
+  transform: 0.5s;
+}
+
+header {
+  background-color: rgba(11, 11, 11, 0.7);
+  margin-bottom: 68px;
+  width: auto;
+  height: 238px;
+  align-content: center;
+}
+.navbar {
+  margin: auto;
+  text-align: center;
+}
+.logo {
+  color: antiquewhite;
+  font-size: 110px;
+  font-family: "Tangerine", cursive;
+  font-weight: bolder;
+}
+.btn {
+  border: none;
+  margin-top: 35px;
+  padding-left: 20px;
+}
+#home,
+#menu,
+#contact {
+  width: 130px;
+  height: 70px;
+  margin-left: 25px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: aliceblue;
+  border: none;
+  font-family: monospace;
+  font-size: x-large;
+}
+#home:hover {
+  transform: translateY(-30%);
+  background-color: rgba(193, 85, 27, 0.5);
+  border-radius: 0% 99% 100% 5% / 0% 50% 50% 1%;
+}
+
+#menu:hover {
+  transform: translateY(-30%);
+  background-color: rgba(193, 85, 27, 0.5);
+  border-radius: 0% 99% 100% 5% / 0% 50% 50% 1%;
+}
+
+#contact:hover {
+  transform: translateY(-30%);
+  background-color: rgba(193, 85, 27, 0.5);
+  border-radius: 0% 99% 100% 5% / 0% 50% 50% 1%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 20;
+  }
+}
